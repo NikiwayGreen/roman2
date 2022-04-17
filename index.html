@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="Dogs, Roman Wegera" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World of Dogs</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/logo.png"
+        alt="logo World of Dogs"
+        width="70"
+        height="50"
+      />
+      <img src="images/name.png" alt="World of Dogs" width="120" height="50" />
+    </header>
+
+    <nav>
+      <ul>
+        <li class="selected"><a href="index.html"> HOME </a></li>
+        <li><a href="Blog.html"> BLOG </a></li>
+        <li><a href="https://www.chess.com/member/wegera"> CHESS </a></li>
+        <li><a href="./ex/index.html"> WORLD </a></li>
+      </ul>
+    </nav>
+
+    <section id="blog">
+      <section class="avatar">
+        <img
+          src="images/1.png"
+          width="126"
+          height="126"
+          alt="dog"
+          style="border: 1px dashed gray"
+        />
+      </section>
+      <article>
+        <p>
+          Dogs were probably the first tame animals. They have accompanied
+          humans for at least 20,000 years and possibly as many as 40,000.
+          Scientists generally agree that all dogs, domestic and wild, share a
+          common wolf ancestor; at some point grey wolves and dogs went on their
+          separate evolutionary ways.
+        </p>
+        <iframe
+          width="253"
+          height="180"
+          src="https://www.youtube.com/embed/WDlu1OhvYBM"
+          style="margin: 10px 20px 20px 50px"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <button type="button" onclick="myFunction()">Click Me!</button>
+
+        <p id="demo">This is a demonstration.</p>
+        <table style="border: 2px solid black; border-spacing: 25px">
+          <tr>
+            <th>Worlds of Roman</th>
+            <th>date</th>
+            <th>links</th>
+          </tr>
+          <tr>
+            <td>Plains</td>
+            <td>01.01.2021</td>
+            <td><a href="../exersice/1/index.html">Go to</a></td>
+          </tr>
+          <tr>
+            <td>Types of Roman</td>
+            <td>04.01.2021</td>
+            <td><a href="../exersice/2/index.html">Go to</a></td>
+          </tr>
+        </table>
+        <script>
+          function myFunction() {
+            document.getElementById("demo").innerHTML = "Dogs!";
+            document.getElementById("demo").style.fontSize = "25px";
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.backgroundColor = "yellow";
+          }
+        </script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+      </article>
+    </section>
+  </body>
+</html>
